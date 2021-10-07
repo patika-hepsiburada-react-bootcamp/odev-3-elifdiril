@@ -20,6 +20,6 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => console.log('a user disconnected'));
 });
 
-server.listen(3000, () => {
-  console.log('listening on *:3000');
+server.listen("https://obscure-forest-59707.herokuapp.com/", () => {
+  console.log('listening...');
 });
