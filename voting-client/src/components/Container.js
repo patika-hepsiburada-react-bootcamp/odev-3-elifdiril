@@ -15,7 +15,7 @@ function Container() {
         subscribeToNewVotes((vote) => {
             setVote((prev) => ({ ...prev, [vote]: prev[vote] + 1 }));
         });
-    }, []);
+    }, [setVote]);
 
     return (
         <div className="container">
